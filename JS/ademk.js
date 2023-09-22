@@ -1,3 +1,4 @@
+<script>
 var images = [
   {src: "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/10/3/dd2dbcdb-a504-48b6-bc93-c06f4966dfcb.png.webp", href: "https://tokopedia.link/BDrke6PlOCb"},
   {src: "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/6/2/00f390cd-e16d-4cef-989a-7830afd5e69f.png.webp", href: "https://tokopedia.link/Tr3KkjLlOCb"},
@@ -18,3 +19,4 @@ var images = [
     container.appendChild(link);
   }
   window.onload = displayImage;
+  </script>
