@@ -6,3 +6,18 @@ var ademk = [
   {src: "https://images.tokopedia.net/img/cache/700/VqbcmM/2023/9/13/632c3394-4262-4781-bcf1-998e356013b6.jpg.webp", href: "https://tokopedia.link/1VSR8P2wEzb"},
   {src: "https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/6/b9359c63-6a9b-406f-b75f-38e7a9af7c3f.jpg.webp", href: "https://tokopedia.link/40KfGTW0IDb"}
 ];
+  function displayImage() {
+    var randomIndex = Math.floor(Math.random() * ademk.length);
+    var image = ademk[randomIndex];
+    var link = document.createElement("a");
+    link.href = image.href;
+    link.target = "_blank";
+    var img = document.createElement("img");
+    img.loading = "lazy";
+    img.src = image.src;
+    img.alt = "Aff";
+    link.appendChild(img);
+    var container = document.getElementById("munculre");
+    container.appendChild(link);
+  }
+  window.onload = displayImage;
